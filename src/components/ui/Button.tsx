@@ -14,16 +14,21 @@ const varientStyles = {
     "secondary": "bg-purple-300 text-purple-600"
 }
 const sizeStyles = {
-    "sm":"p-2",
-    "md":"p-4",
-    "lg":"p-6"
+    "sm":"px-2 py-2",
+    "md":"px-4 py-2",
+    "lg":"px-6 py-2"
 }
-const defaultStyles = "rounded-md p-4";
+const defaultStyles = "rounded-md p4 outline-none cursor-pointer flex items-center gap-2";
 export const Button = (props:ButtonProps)=>{
-    return <button 
-    className={`${varientStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size]} `}
-    onClick={props.onclick}
-    >
-        {props.text}
-    </button>
+    return (<span>
+                <button 
+                    className={`${varientStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size]}`}
+                    onClick={props.onclick}
+                >
+                    {props.startIcon?props.startIcon:null}
+                    {props.text}
+                    {props.endIcon?props.startIcon:null}
+                </button>
+        </span>
+    );
 }
