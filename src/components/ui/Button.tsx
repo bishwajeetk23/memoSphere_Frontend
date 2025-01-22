@@ -10,7 +10,7 @@ export interface ButtonProps {
 }
 
 const varientStyles = {
-    "primary": "bg-purple-600 text-white",
+    "primary": "bg-purple-600 text-white-300",
     "secondary": "bg-purple-300 text-purple-600"
 }
 const sizeStyles = {

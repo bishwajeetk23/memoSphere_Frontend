@@ -1,5 +1,5 @@
 interface PlusIconProps{
-    size: "sm" | "md" | "lg"
+    size: "sm" | "md" | "lg";
 }
 const sizeStyles = {
     "sm": "size-2",

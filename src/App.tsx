@@ -7,11 +7,8 @@ function App() {
   return (
     <>
     <div className='h-screen bg-blue-50'>
+        <PlusIcon size='md' />
         <Card size='md' className={'w-[300px] h-[400px]'}>
-          <div className='flex flex-col'>
-            <Button variant='primary' size='md' text='Add Content' onclick={()=>{alert("hello primary")}}></Button>
-            <Button variant='secondary' size='md' text='Add Content' onclick={()=>{alert("hello secondary")}} startIcon={<PlusIcon size={"md"} />}></Button>
-          </div>
         </Card>
     </div>
     </>
